@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Cielo Estrellado</title>
+    <style>
+        #back {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            background: linear-gradient(180deg, black, #000099, #66c2ff, #ffcccc, #ffeee6);
+            margin: 0;
+            padding: 0;
+            top: 0;
+            left: 0;
+        }
+
+        .star {
+            background: white;
+            border-radius: 50%;
+            position: relative;
+            width: 20px;
+            height: 20px;
+            animation-iteration-count: infinite;
+            animation-name: brillaStar1;
+        }
+
+        #star1 {
+          left: 10%;
+          top:100px;          
+          animation-duration: 2s;
+        }
+        
+        #star2 {
+          left: 20%;
+          top: 150px;          
+          animation-duration: 3s;
+        }
+        
+        #star3 {
+          left: 50%;
+          top: 85px;           
+          animation-duration: 1.3s;
+        }
+        
+        #star4 {
+          left:30%;
+          top: 100px;          
+          animation-duration: 500ms;
+        }
+
+        #star5 {
+          left: 50%;
+          top: 130px;          
+          animation-duration: 700ms;
+        }
+
+        #star6 {
+          left: 90%;
+          top: 80px;          
+          animation-duration: 1200ms;
+        }         
+   
+        @keyframes brillaStar1 {
+            70% {
+                transform: scale(0.1);
+                opacity: 0.1;
+            }
+        }
+
+        #fugaz {
+            background: yellow;
+            border-radius: 40%;
+            position: relative;
+            left: -10%;
+            top: 50px;
+ 
+            width: 15px;
+            height: 15px;
+            transform: scale(2);
+            animation-iteration-count: infinite;
+            animation-name: sky-cross;
+            animation-duration: 7s;
+         }
+    
+        @keyframes sky-cross {
+
+
+            25% {
+                transform: scale(0.3);
+                left: 90%;
+                top: 25px;
+            }
+            65% {
+                transform: scale(0.3);
+                left: 90%;
+                top: 205px;
+            }
+            100% {
+                background: transparent;
+                opacity: 0;
+               
+            }
+        }
+        
+    </style>
+</head>
+
+
+
+
+<body>
+    <div id="back"></div>
+    <div class="star" id="star1"></div>    
+    <div class="star" id="star2"></div>     
+    <div class="star" id="star3"></div>     
+    <div class="star" id="star4"></div>     
+    <div class="star" id="star5"></div>     
+    <div class="star" id="star6"></div>
+         
+    <div id="fugaz"></div>
+
+</body>
+
+</html>
